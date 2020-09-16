@@ -1,6 +1,8 @@
 .ul {
   padding-top: 20px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -10,9 +12,10 @@
 .li {
   float: left;
   text-align: center;
-  list-style-type: none;
   position: relative;
   padding: 20px 5px 0 5px;
+  display: flex;
+  flex-direction: row;
 
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -28,6 +31,7 @@
   border-top: 1px solid #ccc;
   width: 50%;
   height: 20px;
+  display: flex;
 }
 .li::after {
   right: auto;
@@ -67,6 +71,7 @@
   border-left: 1px solid #ccc;
   width: 0;
   height: 20px;
+  display: flex;
 }
 .li div {
   border: 1px solid #ccc;
@@ -74,7 +79,8 @@
   text-decoration: none;
   color: #666;
   font-family: arial, verdana, tahoma;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
 
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -84,7 +90,7 @@
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
 }
-.li div:hover,
+/* .li div:hover,
 .li div:hover + .ul .li div {
   background: #c8e4f8;
   color: #000;
@@ -95,4 +101,4 @@
 .li div:hover + .ul::before,
 .li div:hover + .ul .ul::before {
   border-color: #94a0b4;
-}
+} */

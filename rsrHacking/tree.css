@@ -1,0 +1,16 @@
+.ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li {
+  display: flex;
+  flex-direction: row;
+}
+
+.data {
+  border: 3px solid #ccc;
+  margin: 25px;
+  padding: 5px;
+}
