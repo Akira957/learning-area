@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tree.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.js"></script>
     <title>Binary Tree</title>
   </head>
   <body>
@@ -11,24 +17,45 @@
       <div class="data">Root</div>
       <div class="li">
         <div class="ul">
-          <div class="data">Jim</div>
+          <svg id="svg">
+            <line id="line" />
+          </svg>
+          <div class="data data-left">Jim</div>
           <div class="li">
             <div class="ul">
-              <div class="data">Fire</div>
+              <div class="data data-left">Fire</div>
+              <div class="li">
+                <div class="ul">
+                  <div class="data data-left">Inferno</div>
+                </div>
+                <div class="ul">
+                  <div class="data-null">Tidal</div>
+                </div>
+              </div>
             </div>
             <div class="ul">
-              <div class="data">Water</div>
+              <div class="data data-right">Water</div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="li">
         <div class="ul">
-          <div class="data">Robust</div>
+          <div class="data data-right">Robust</div>
           <div class="li">
             <div class="ul">
-              <div class="data">Wind</div>
+              <div class="data data-left">Wind</div>
             </div>
             <div class="ul">
-              <div class="data">Electic</div>
+              <div class="data data-right">Electic</div>
+              <div class="li">
+                <div class="ul">
+                  <div class="data-null">Time</div>
+                </div>
+                <div class="ul">
+                  <div class="data data-right">Flowers</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
