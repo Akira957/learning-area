@@ -4,6 +4,8 @@ let $divp = $(".data");
 
 let $divc = $(".data-left");
 
+let $divr = $(".data-right");
+
 function drawLine($divp, $divc, $line) {
 
     var x1 = $divp.offset().left + ($divp.outerWidth() / 2);
@@ -12,18 +14,20 @@ function drawLine($divp, $divc, $line) {
     var y2 = $divc.offset().top;
 
     $line.attr('x1', x1).attr('y1', y1).attr('x2', x2).attr('y2', y2);
-
-    console.log("Hello World");
 }
 
 
+// $(function () {
+//     let $line = $("#line");
 
-$(function () {
-    let $line = $("#line");
+//     let $divp = $(".data");
 
-    let $divp = $(".data");
+//     let $divc = $(".data-left");
 
-    let $divc = $(".data-left");
+//     drawLine($divp, $divc, $line);
+// });
 
-    drawLine($divp, $divc, $line);
-});
+function drawLines() {
+
+
+}
